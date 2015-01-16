@@ -1,4 +1,4 @@
-package com.example.daori.robobinding;
+package com.example.daori.robobinding.modelpresentation;
 
 import org.robobinding.presentationmodel.HasPresentationModelChangeSupport;
 import org.robobinding.presentationmodel.PresentationModelChangeSupport;
@@ -8,11 +8,11 @@ import org.robobinding.presentationmodel.PresentationModelChangeSupport;
  */
 
 @org.robobinding.annotation.PresentationModel
-public class PresentationModel implements HasPresentationModelChangeSupport {
+public class HelloPresentationModel implements HasPresentationModelChangeSupport {
     private PresentationModelChangeSupport changeSupport;
     private String name;
 
-    public PresentationModel() {
+    public HelloPresentationModel() {
         changeSupport = new PresentationModelChangeSupport(this);
     }
 

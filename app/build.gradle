@@ -36,7 +36,6 @@ android {
 
 ext {
     robobindingVersion = 'latest.integration'
-    //robobindingVersion = '0.8.6-SNAPSHOT'
 }
 
 dependencies {
@@ -47,6 +46,5 @@ dependencies {
         exclude group: 'com.google.guava', module: 'guava'
     }
     apt "org.robobinding:codegen:$robobindingVersion"
-
 
 }

@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.daori.robobinding.modelpresentation.MainPresentationModel;
+
 import org.robobinding.binder.Binders;
 
 
@@ -13,11 +15,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        PresentationModel presentationModel = new PresentationModel();
-        View rootView = Binders.inflateAndBindWithoutPreInitializingViews(this, R.layout.activity_main, presentationModel);
+        MainPresentationModel mainPresentationModel = new MainPresentationModel(this);
+        View rootView = Binders.inflateAndBindWithoutPreInitializingViews(this, R.layout.activity_main, mainPresentationModel);
+
         setContentView(rootView);
     }
-
-
 
 }
