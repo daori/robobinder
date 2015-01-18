@@ -12,15 +12,18 @@
     android:orientation="vertical">
 
     <EditText
+        android:id="@+id/input_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         bind:text="${name}"/>
     <TextView
+        android:id="@+id/label_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         bind:text="{hello}" />
 
     <Button
+        android:id="@+id/button_say_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="say Hello"
